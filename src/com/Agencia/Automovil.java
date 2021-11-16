@@ -3,7 +3,7 @@ public class Automovil implements Comparable
 {
     String marca, modelo, color, anio, VIN;
     int numPuertas, numAsientos, numMaletero, numBolsos;
-    boolean rentado;
+    boolean comprado;
 
     public Automovil(String Cmarca, String Cmodelo, String Ccolor, String Canio)
     {
@@ -11,7 +11,7 @@ public class Automovil implements Comparable
         modelo = Cmodelo;
         color = Ccolor;
         anio = Canio;
-        rentado = false;
+        comprado = false;
     }
 
     public void setVIN(String vin)
@@ -33,7 +33,7 @@ public class Automovil implements Comparable
 
     public void setCompra(boolean estado)
     {
-        rentado = estado;
+        comprado = estado;
     }
 
     public String getAutoInfo()
@@ -65,7 +65,7 @@ public class Automovil implements Comparable
 
     public boolean esComprado()
     {
-        return rentado;
+        return comprado;
     }
 
     public String toString()
